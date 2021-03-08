@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_o_Wy4LGAEeql_JCgeDvG6Q">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_pBtjULGAEeql_JCgeDvG6Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_pBx0wbGAEeql_JCgeDvG6Q">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_o_Wy4bGAEeql_JCgeDvG6Q" name="designPatternsFinalWork">
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_XZ8LGAEeql_JCgeDvG6Q" name="SubOrderBuilder">
+      <generalization xmi:id="_pBdEoLGAEeql_JCgeDvG6Q" general="_o_brYLGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pBtjUbGAEeql_JCgeDvG6Q" name="buildOrder" visibility="public">
+        <ownedParameter xmi:id="_pBtjUrGAEeql_JCgeDvG6Q" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pBtjU7GAEeql_JCgeDvG6Q" name="address">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_XZ8bGAEeql_JCgeDvG6Q" name="MP10Factory" clientDependency="_pBtjVLGAEeql_JCgeDvG6Q _WCwwkLGBEeql_JCgeDvG6Q">
+      <interfaceRealization xmi:id="_pBtjVLGAEeql_JCgeDvG6Q" name="MPFactory" supplier="_o_Z2MbGAEeql_JCgeDvG6Q" client="_o_XZ8bGAEeql_JCgeDvG6Q" contract="_o_Z2MbGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pBuKYLGAEeql_JCgeDvG6Q" name="produceMobilePhone" visibility="public">
+        <ownedParameter xmi:id="_pBuKYbGAEeql_JCgeDvG6Q" name="return" type="_o_Z2MLGAEeql_JCgeDvG6Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_o_YBALGAEeql_JCgeDvG6Q" name="DeliverGoods">
+      <ownedOperation xmi:id="_pBuKYrGAEeql_JCgeDvG6Q" name="sendMP" visibility="public">
+        <ownedParameter xmi:id="_pBuKY7GAEeql_JCgeDvG6Q" name="method">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pBuKZLGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pBuKZbGAEeql_JCgeDvG6Q" name="selectMethod" visibility="public">
+        <ownedParameter xmi:id="_pBuKZrGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_YoELGAEeql_JCgeDvG6Q" name="Order">
+      <ownedAttribute xmi:id="_pBuxcLGAEeql_JCgeDvG6Q" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pBuxcbGAEeql_JCgeDvG6Q" name="address" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_pBvYgLGAEeql_JCgeDvG6Q" name="setName" visibility="public">
+        <ownedParameter xmi:id="_pBvYgbGAEeql_JCgeDvG6Q" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pBvYgrGAEeql_JCgeDvG6Q" name="setAddress" visibility="public">
+        <ownedParameter xmi:id="_pBvYg7GAEeql_JCgeDvG6Q" name="address">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pBv_kLGAEeql_JCgeDvG6Q" name="getName" visibility="public">
+        <ownedParameter xmi:id="_pBv_kbGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pBv_krGAEeql_JCgeDvG6Q" name="getAddress" visibility="public">
+        <ownedParameter xmi:id="_pBv_k7GAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_YoEbGAEeql_JCgeDvG6Q" name="XiaoMiCompany">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_o_YoErGAEeql_JCgeDvG6Q" name="SingletonInstance" visibility="private">
+        <ownedAttribute xmi:id="_pBxNsLGAEeql_JCgeDvG6Q" name="INSTANCE" visibility="private" isStatic="true" type="_o_YoEbGAEeql_JCgeDvG6Q" isReadOnly="true"/>
+      </nestedClassifier>
+      <ownedOperation xmi:id="_pBwmoLGAEeql_JCgeDvG6Q" name="getInstance" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_pBwmobGAEeql_JCgeDvG6Q" name="return" type="_o_YoEbGAEeql_JCgeDvG6Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pBwmorGAEeql_JCgeDvG6Q" name="call" visibility="public">
+        <ownedParameter xmi:id="_pBwmo7GAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_ZPILGAEeql_JCgeDvG6Q" name="Express" clientDependency="_pBx0wLGAEeql_JCgeDvG6Q">
+      <ownedAttribute xmi:id="_pBx0wrGAEeql_JCgeDvG6Q" name="flag" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pByb0LGAEeql_JCgeDvG6Q" name="m" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_pBx0wLGAEeql_JCgeDvG6Q" name="DeliverGoods" supplier="_o_YBALGAEeql_JCgeDvG6Q" client="_o_ZPILGAEeql_JCgeDvG6Q" contract="_o_YBALGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pBzC4LGAEeql_JCgeDvG6Q" name="sendMP" visibility="public">
+        <ownedParameter xmi:id="_pBzC4bGAEeql_JCgeDvG6Q" name="method">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pBzC4rGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pBzC47GAEeql_JCgeDvG6Q" name="selectMethod" visibility="public">
+        <ownedParameter xmi:id="_pBzC5LGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_o_Z2MLGAEeql_JCgeDvG6Q" name="MobilePhone">
+      <ownedOperation xmi:id="_pBzp8LGAEeql_JCgeDvG6Q" name="produce" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_o_Z2MbGAEeql_JCgeDvG6Q" name="MPFactory" clientDependency="_BJfboLGBEeql_JCgeDvG6Q">
+      <ownedOperation xmi:id="_pBzp8bGAEeql_JCgeDvG6Q" name="produceMobilePhone" visibility="public">
+        <ownedParameter xmi:id="_pBzp8rGAEeql_JCgeDvG6Q" name="return" type="_o_Z2MLGAEeql_JCgeDvG6Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_Z2MrGAEeql_JCgeDvG6Q" name="SMS">
+      <ownedAttribute xmi:id="_pBzp87GAEeql_JCgeDvG6Q" name="name" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pB04ELGAEeql_JCgeDvG6Q" name="pnum" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_pB04ErGAEeql_JCgeDvG6Q" name="clone" visibility="public">
+        <ownedParameter xmi:id="_pB04E7GAEeql_JCgeDvG6Q" name="return" type="_pB04EbGAEeql_JCgeDvG6Q" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB1fILGAEeql_JCgeDvG6Q" name="getName" visibility="public">
+        <ownedParameter xmi:id="_pB1fIbGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB2GMLGAEeql_JCgeDvG6Q" name="setName" visibility="public">
+        <ownedParameter xmi:id="_pB2GMbGAEeql_JCgeDvG6Q" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB2GMrGAEeql_JCgeDvG6Q" name="getPnum" visibility="public">
+        <ownedParameter xmi:id="_pB2GM7GAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB2tQLGAEeql_JCgeDvG6Q" name="setPnum" visibility="public">
+        <ownedParameter xmi:id="_pB2tQbGAEeql_JCgeDvG6Q" name="pnum">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB3UULGAEeql_JCgeDvG6Q" name="toString" visibility="public">
+        <ownedParameter xmi:id="_pB3UUbGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_adQLGAEeql_JCgeDvG6Q" name="Client">
+      <ownedOperation xmi:id="_pB3UUrGAEeql_JCgeDvG6Q" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_pB3UU7GAEeql_JCgeDvG6Q" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pB3UVLGAEeql_JCgeDvG6Q" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pB3UVbGAEeql_JCgeDvG6Q"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_brYLGAEeql_JCgeDvG6Q" name="OrderBuidler" isAbstract="true">
+      <ownedAttribute xmi:id="_pB4icLGAEeql_JCgeDvG6Q" name="order" visibility="protected" type="_o_YoELGAEeql_JCgeDvG6Q" association="_pEHXELGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pB4icbGAEeql_JCgeDvG6Q" name="buildOrder" visibility="public" isAbstract="true">
+        <ownedParameter xmi:id="_pB4icrGAEeql_JCgeDvG6Q" name="name">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pB4ic7GAEeql_JCgeDvG6Q" name="address">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB5JgLGAEeql_JCgeDvG6Q" name="getOrder" visibility="public">
+        <ownedParameter xmi:id="_pB5JgbGAEeql_JCgeDvG6Q" name="return" type="_o_YoELGAEeql_JCgeDvG6Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_brYbGAEeql_JCgeDvG6Q" name="MP10" clientDependency="_pB5JgrGAEeql_JCgeDvG6Q">
+      <interfaceRealization xmi:id="_pB5JgrGAEeql_JCgeDvG6Q" name="MobilePhone" supplier="_o_Z2MLGAEeql_JCgeDvG6Q" client="_o_brYbGAEeql_JCgeDvG6Q" contract="_o_Z2MLGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pB5Jg7GAEeql_JCgeDvG6Q" name="produce" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_cScLGAEeql_JCgeDvG6Q" name="MP10PlusFactory" clientDependency="_pB5wkLGAEeql_JCgeDvG6Q _Dul1oLGBEeql_JCgeDvG6Q">
+      <interfaceRealization xmi:id="_pB5wkLGAEeql_JCgeDvG6Q" name="MPFactory" supplier="_o_Z2MbGAEeql_JCgeDvG6Q" client="_o_cScLGAEeql_JCgeDvG6Q" contract="_o_Z2MbGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pB5wkbGAEeql_JCgeDvG6Q" name="produceMobilePhone" visibility="public">
+        <ownedParameter xmi:id="_pB5wkrGAEeql_JCgeDvG6Q" name="return" type="_o_Z2MLGAEeql_JCgeDvG6Q" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_cScbGAEeql_JCgeDvG6Q" name="MP10Plus" clientDependency="_pB5wk7GAEeql_JCgeDvG6Q">
+      <interfaceRealization xmi:id="_pB5wk7GAEeql_JCgeDvG6Q" name="MobilePhone" supplier="_o_Z2MLGAEeql_JCgeDvG6Q" client="_o_cScbGAEeql_JCgeDvG6Q" contract="_o_Z2MLGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pB5wlLGAEeql_JCgeDvG6Q" name="produce" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_c5gLGAEeql_JCgeDvG6Q" name="Tradition" clientDependency="_pB5wlbGAEeql_JCgeDvG6Q">
+      <ownedAttribute xmi:id="_pB6XoLGAEeql_JCgeDvG6Q" name="flag" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_pB6-sLGAEeql_JCgeDvG6Q" name="m" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_pB5wlbGAEeql_JCgeDvG6Q" name="DeliverGoods" supplier="_o_YBALGAEeql_JCgeDvG6Q" client="_o_c5gLGAEeql_JCgeDvG6Q" contract="_o_YBALGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pB6-sbGAEeql_JCgeDvG6Q" name="sendMP" visibility="public">
+        <ownedParameter xmi:id="_pB6-srGAEeql_JCgeDvG6Q" name="method">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pB6-s7GAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB7lwLGAEeql_JCgeDvG6Q" name="selectMethod" visibility="public">
+        <ownedParameter xmi:id="_pB7lwbGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_o_c5gbGAEeql_JCgeDvG6Q" name="DeliverMethod" clientDependency="_pB7lwrGAEeql_JCgeDvG6Q">
+      <ownedAttribute xmi:id="_pB8M0LGAEeql_JCgeDvG6Q" name="flag" visibility="package">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_pB7lwrGAEeql_JCgeDvG6Q" name="DeliverGoods" supplier="_o_YBALGAEeql_JCgeDvG6Q" client="_o_c5gbGAEeql_JCgeDvG6Q" contract="_o_YBALGAEeql_JCgeDvG6Q"/>
+      <ownedOperation xmi:id="_pB8M0bGAEeql_JCgeDvG6Q" name="selectMethod" visibility="public">
+        <ownedParameter xmi:id="_pB8M0rGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_pB8z4LGAEeql_JCgeDvG6Q" name="sendMP" visibility="public">
+        <ownedParameter xmi:id="_pB8z4bGAEeql_JCgeDvG6Q" name="method">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_pB8z4rGAEeql_JCgeDvG6Q" name="return" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pEHXELGAEeql_JCgeDvG6Q" memberEnd="_pB4icLGAEeql_JCgeDvG6Q _pEHXEbGAEeql_JCgeDvG6Q">
+      <ownedEnd xmi:id="_pEHXEbGAEeql_JCgeDvG6Q" name="OrderBuidler" type="_o_brYLGAEeql_JCgeDvG6Q" association="_pEHXELGAEeql_JCgeDvG6Q"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pBcdkLGAEeql_JCgeDvG6Q" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_pBcdkbGAEeql_JCgeDvG6Q" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_pBcdkrGAEeql_JCgeDvG6Q" name="Scanner"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_pB04EbGAEeql_JCgeDvG6Q" name="Object"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_BJfboLGBEeql_JCgeDvG6Q" name="Dependency1" supplier="_o_brYbGAEeql_JCgeDvG6Q" client="_o_Z2MbGAEeql_JCgeDvG6Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Dul1oLGBEeql_JCgeDvG6Q" name="Dependency2" supplier="_o_cScbGAEeql_JCgeDvG6Q" client="_o_cScLGAEeql_JCgeDvG6Q"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_WCwwkLGBEeql_JCgeDvG6Q" name="Dependency3" supplier="_o_brYbGAEeql_JCgeDvG6Q" client="_o_XZ8bGAEeql_JCgeDvG6Q"/>
+</uml:Model>
